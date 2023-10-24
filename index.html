@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+      .header {
+        background-color: #535ee5;
+      }
+      .header .heading {
+        padding: 4.2vw;
+        margin-bottom: 0px;
+      }
+      .nav-bar {
+        background: #3429ad;
+        padding: 20px;
+      }
+      .nav-bar span a {
+        padding-left: 17%;
+      }
+      .text-white {
+        color: #fff !important;
+      }
+      .gradient {
+        height: 60vh;
+        width: 100%;
+        background-image: linear-gradient(
+          to left,
+          rgba(51, 50, 50, 0.5),
+          rgb(0, 0, 0)
+        );
+      }
+      .text {
+        border: 4px;
+        font-size: medium;
+        border-left-style: solid;
+        border-left-color: #51e5a5;
+        color: white; /* Text color */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+      }
+      .gradient .text .ml-5{
+        margin-left: 1rem;
+
+    }
+
+      .btnculs {
+        background: #51e5a5;
+        color: #fff;
+        padding: 12px 50px 12px 50px;
+        font-size: 1.9vh;
+        border: none;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .btnculs:hover {
+        background: #037aad;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+          rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+          rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+          rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+          rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+          rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      }
+      .btn-call {
+        background: #535ee5;
+        color: #fff;
+        padding: 12px 100px 12px 100px;
+        font-size: 1.9vh;
+        border: none;
+        border-radius: 50px;
+      }
+      .btn-call:hover {
+        background: #000000e1;
+        /* box-shadow: rgba(56, 55, 55, 0.17) 0px -23px 25px 0px inset,
+          rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+          rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+          rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+          rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+          rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+
+        background: rgb(21, 33, 110);
+        background: linear-gradient(
+          110deg,
+          rgba(23, 42, 170, 0.938) 25%,
+          rgba(11, 7, 56, 0.9) 57%
+        );
+      }
+
+      .contact {
+        padding: 8%;
+        /* transform: scaleX(-1);
+        height: 94vh; */
+        width: 100%;
+        background: rgb(21, 33, 110);
+        background: linear-gradient(
+          110deg,
+          rgba(23, 42, 170, 0.938) 25%,
+          rgba(0, 0, 0, 0.9) 57%
+        );
+      }
+      .btn-privacy {
+        background: #51e5a5;
+        color: #fff;
+        padding: 10px 30px 10px 30px;
+        font-size: 1.8vh;
+        border: none;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .btn-privacy:hover {
+        background: #037aad;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+          rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+          rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+          rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+          rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+          rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      }
+      .text-bule {
+        color: #6fd5ff;
+      }
+
+      .form-input {
+        background: none;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #84898f;
+        width: 100%;
+      }
+      input::placeholder {
+        color: #66c0e6;
+        font-size: 1.6vh;
+      }
+      input:hover {
+        border-bottom: 1px solid #66c0e6;
+      }
+      .btn-book {
+        background: #51e5a5;
+        color: #fff;
+        padding: 15px 40px 15px 40px;
+        font-size: 1.9vh;
+        border: none;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        float: right;
+      }
+      .btn-book:hover {
+        background: #037aad;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+          rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+          rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+          rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+          rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+          rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      }
+      .term-policy-sec:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .form-to-book:hover {
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(27, 4, 235, 0.22) 0px 15px 12px;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      .client-section .row .first-child{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: 1s box-shadow;
+      }
+      .client-section .row .second-child{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: 1s box-shadow;
+      }
+      .client-section .row .third-child{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: 1s box-shadow;
+      }
+      .client-section .row .first-child:hover {
+        box-shadow: rgba(4, 27, 228, 0.4) -5px 5px,
+          rgba(49, 51, 177, 0.3) -10px 10px, rgba(29, 14, 238, 0.2) -15px 15px,
+          rgba(13, 9, 243, 0.1) -20px 20px, rgba(47, 6, 233, 0.05) -25px 25px;
+      }
+      .client-section .row .second-child:hover {
+        box-shadow: rgba(18, 3, 228, 0.4) 0px 5px, rgba(8, 4, 248, 0.3) 0px 10px,
+          rgba(2, 6, 241, 0.2) 0px 15px, rgba(5, 9, 235, 0.1) 0px 20px,
+          rgba(39, 5, 233, 0.05) 0px 25px;
+      }
+      .client-section .row .third-child:hover {
+        box-shadow: rgba(4, 27, 228, 0.4) 5px 5px,
+          rgba(49, 51, 177, 0.3) 10px 10px, rgba(29, 14, 238, 0.2) 15px 15px,
+          rgba(13, 9, 243, 0.1) 20px 20px, rgba(47, 6, 233, 0.05) 25px 25px;
+      }
+      .icon-font div {
+        height: 38px;
+        width: 38px;
+        border-radius: 5px;
+        background: #535ee5;
+        margin-left: 8px;
+      }
+      .icon-font div:hover {
+        background: #51e5a5;
+        border-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+          rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      }
+      .contact-row {
+      }
+      .section-unlock-bussiness {
+        background-image: linear-gradient(
+            -90deg,
+            rgba(255, 255, 255, 255) 61.95%,
+            transparent 61.95%,
+            transparent 151%
+          ),
+          linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 255) 0%,
+            rgba(238, 239, 252, 255) 0%
+          );
+        padding: 5%;
+      }
+      .btn-call-request-parent {
+        display: none;
+      }
+
+      @media screen and (min-width: 230px) and (max-width: 512px) {
+        .btn-call {
+          display: none;
+        }
+        .section-unlock-bussiness {
+          background: #fff;
+        }
+        .btn-call-request-parent {
+          display: block;
+        }
+        .btn-call-request-parent .btn-call-media {
+          background: #535ee5;
+          color: #fff;
+          padding: 12px 80px 12px 80px;
+          font-size: 1.6vh;
+          border: none;
+          border-radius: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- --------------------- header section start------------  -->
+    <!-- <div class="header">
+      <h1 class="heading text-center text-white">Quick Fund</h1>
+    </div> -->
+
+    <div class="nav-bar">
+      <span>
+        <a href="" class="text-white">Home</a>
+      </span>
+      <span class="text-white"> >> </span>
+      <span class="text-white"> Quick Fund </span>
+    </div>
+
+    <!-- --------------------- header section end------------  -->
+
+    <div class="content-section">
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  hero section start  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+      <div
+        class="img-fluid d-flex justify-content-center align-items-center w-100 h-100"
+        style="
+          background-image: url(./img/bg-img.webp);
+          background-position: top;
+        "
+      >
+        <div
+          class="gradient d-flex justify-content-center align-items-center ml-5"
+        >
+          <div class="row text w-75">
+            <div class="col-md-6 col-sm-12">
+              <div class="ml-5">
+                <h1 class="">
+                  Quick and Hassle-Free Merchant <br />Cash Advances for Your
+                  Growing Business
+                </h1>
+                <h6 class="">
+                  GET ACCESS TO QUICK FUNDS WITH MINIMAL PAPERWORK TO FUEL YOUR
+                  <br />BUSINESS AMBITIONS.
+                </h6>
+              </div>
+            </div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </div>
+      <!--++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  hero section end  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+      <div
+        class="d-flex justify-content-center align-items-center img-fluid section-unlock-bussiness"
+      >
+        <div class="row content-first pt-5 w-75">
+          <div class="col-md-6 col-sm-12">
+            <img src="./img/img2.webp" alt="" class="w-100 h-100" />
+          </div>
+          <div class="col-md-6 col-sm-12 mt-5">
+            <div class="p-2">
+              <h5 class>
+                Unlock Your Business Potential With A Merchant Cash Advance
+              </h5>
+              <p>
+                A Merchant Cash Advance is an innovative financing solution that
+                allows you to receive a lump sum of cash in exchange for a
+                percentage of your future sales.
+              </p>
+              <ul class="p-3">
+                <li class="lh-lg">Quick approval</li>
+                <li class="lh-lg">Low credit score acceptance</li>
+                <li class="lh-lg">Low credit score acceptance</li>
+              </ul>
+              <button class="btnculs rounded-left-top">
+                Book a Consultation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center align-items-center pt-5">
+        <button class="btn-call shadow-lg mb-5">
+          Secure Your Funds Today
+          <a href="" class="text-uppercase text-white">Request A Call</a>
+        </button>
+      </div>
+      <div class="btn-call-request-parent">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="mb-2 mt-0"><h6>Secure Your Funds Today</h6></div>
+          <button class="shadow-lg mb-4 btn-call-media">
+            <a href="" class="text-uppercase text-white">Request A Call</a>
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="contant-img"
+        style="
+          background-image: url(./img/bg-contact.svg);
+          transform: scaleX(-1);
+        "
+      >
+        <div class="contact" style="transform: scaleX(-1)">
+          <div class="container contact-conent">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 term-policy-sec">
+                <div class="p-3 t-3">
+                  <h5 class="text-white">It All Starts With a consultation!</h5>
+                  <p class="text-white mt-5">
+                    Get expert advice on funding options, tailored to your
+                    needs, to fuel your business growth and financial stability.
+                  </p>
+                  <p class="text-white pt-4">
+                    For any kind of queries, Please call
+                  </p>
+                  <p class="text-bule pb-3">(305) 209-2717</p>
+                  <p class="text-white">
+                    Address – 30 N Gould St, Sheridan, WY-82801, United States
+                  </p>
+                  <p class="text-white pt-3">Email – info@omfg.pro</p>
+                  <div class="row mt-4">
+                    <div class="col-md-6 mt-2">
+                      <button class="btn-privacy">Privacy & Policy</button>
+                    </div>
+                    <div class="col-md-6 mt-2">
+                      <button class="btn-privacy">Terms & Condition</button>
+                    </div>
+                  </div>
+                  <div class="d-flex flex-row icon-font">
+                    <div
+                      class="mt-4 d-flex justify-content-center align-items-center p-2"
+                    >
+                      <i
+                        class="fa-brands fa-facebook-f fa-lg fa-bounce text-white"
+                      ></i>
+                    </div>
+                    <div
+                      class="mt-4 d-flex justify-content-center align-items-center p-2"
+                    >
+                      <i
+                        class="fa-brands fa-instagram fa-lg fa-bounce text-white"
+                      ></i>
+                    </div>
+                    <div
+                      class="mt-4 d-flex justify-content-center align-items-center p-2"
+                    >
+                      <i
+                        class="fa-brands fa-youtube fa-lg fa-bounce text-white"
+                      ></i>
+                    </div>
+                    <div
+                      class="mt-4 d-flex justify-content-center align-items-center p-2"
+                    >
+                      <i
+                        class="fa-brands fa-linkedin fa-lg fa-bounce text-white"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 form-to-book">
+                <div class="form-sec container d-flex flex-column">
+                  <form action="">
+                    <div class="m-2">
+                      <label for=""></label>
+                      <input
+                        type="text"
+                        class="p-3 form-input text-white"
+                        name=""
+                        id=""
+                        placeholder="Business Name"
+                      />
+                    </div>
+                    <div class="m-2">
+                      <label for=""></label>
+                      <input
+                        type="text"
+                        class="p-3 form-input text-white"
+                        name=""
+                        id=""
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="m-2">
+                      <label for=""></label>
+                      <input
+                        type="number"
+                        class="p-3 form-input text-white"
+                        name=""
+                        id=""
+                        placeholder="Contact Number"
+                      />
+                    </div>
+                    <div class="m-2">
+                      <label for=""></label>
+                      <input
+                        type="text"
+                        class="p-3 form-input text-white"
+                        name=""
+                        id=""
+                        placeholder="Monthly Revenue"
+                      />
+                    </div>
+                    <div class="mt-5">
+                      <button class="btn-book">Book a consultation</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container client-section ml-5">
+        <h1 class="d-flex justify-content-center align-items-center mt-5 pt-2 mb-5">
+          Trust by Our Client’s
+        </h1>
+        <div class="row mb-5 gap-4">
+          <div class="col-md-4 p-5 first-child ">
+            <p>
+              “We are so grateful for their support and guidance. Their
+              expertise helped us find the perfect financial solution for our
+              growing business.”
+            </p>
+            <h6 class="mt-3 mb-1">RICHARD DAVIDSON</h6>
+            <p>ThemeFusion Company</p>
+          </div>
+          <div class="col-md-3 p-5 second-child">
+            <p>
+              “I never thought getting funds for my business could be this easy.
+              They made the process smooth and stress-free.”
+            </p>
+            <h6 class="mt-3 mb-1">RICHARD DAVIDSON</h6>
+            <p>ThemeFusion Company</p>
+          </div>
+          <div class="col-md-4 p-5 third-child">
+            <p>
+              “We couldn’t have achieved our goals without their expertise. They
+              provided the ideal financial solution that accelerated our
+              business expansion.”
+            </p>
+            <h6 class="mt-3 mb-1">RICHARD DAVIDSON</h6>
+            <p>ThemeFusion Company</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

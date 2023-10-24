@@ -1,0 +1,28 @@
+<div class="row">
+          <div class="col-md-4 first-child">
+            <p>
+              “We are so grateful for their support and guidance. Their
+              expertise helped us find the perfect financial solution for our
+              growing business.”
+            </p>
+            <h6 class="mt-3 mb-1">RICHARD DAVIDSON</h6>
+            <p>ThemeFusion Company</p>
+          </div>
+          <div class="col-md-3  second-child">
+            <p>
+              “I never thought getting funds for my business could be this easy.
+              They made the process smooth and stress-free.”
+            </p>
+            <h6 class="mt-3 mb-1">RICHARD DAVIDSON</h6>
+            <p>ThemeFusion Company</p>
+          </div>
+          <div class="col-md-4  third-child">
+            <p>
+              “We couldn’t have achieved our goals without their expertise. They
+              provided the ideal financial solution that accelerated our
+              business expansion.”
+            </p>
+            <h6 class="mt-3 mb-1">RICHARD DAVIDSON</h6>
+            <p>ThemeFusion Company</p>
+          </div>
+        </div>

@@ -1,0 +1,251 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+  background-color: #535ee5;
+}
+.header .heading {
+  padding: 4.2vw;
+  margin-bottom: 0px;
+}
+.nav-bar {
+  background: #3429ad;
+  padding: 20px;
+}
+.nav-bar span a {
+  padding-left: 17%;
+}
+.text-white {
+  color: #fff !important;
+}
+.gradient {
+  height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(
+    to left,
+    rgba(51, 50, 50, 0.5),
+    rgb(0, 0, 0)
+  );
+}
+.text {
+  border: 4px;
+  font-size: medium;
+  border-left-style: solid;
+  border-left-color: #51e5a5;
+  color: white; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+}
+.gradient .text .ml-5 {
+  margin-left: 1rem;
+}
+
+.btnculs {
+  background: #51e5a5;
+  color: #fff;
+  padding: 12px 50px 12px 50px;
+  font-size: 1.9vh;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.btnculs:hover {
+  background: #037aad;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.btn-call {
+  background: #535ee5;
+  color: #fff;
+  padding: 12px 100px 12px 100px;
+  font-size: 1.9vh;
+  border: none;
+  border-radius: 50px;
+}
+.btn-call:hover {
+  background: #000000e1;
+  /* box-shadow: rgba(56, 55, 55, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+    rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+
+  background: rgb(21, 33, 110);
+  background: linear-gradient(
+    110deg,
+    rgba(23, 42, 170, 0.938) 25%,
+    rgba(11, 7, 56, 0.9) 57%
+  );
+}
+
+.contact {
+  padding: 8%;
+  /* transform: scaleX(-1);
+  height: 94vh; */
+  width: 100%;
+  background: rgb(21, 33, 110);
+  background: linear-gradient(
+    110deg,
+    rgba(23, 42, 170, 0.938) 25%,
+    rgba(0, 0, 0, 0.9) 57%
+  );
+}
+.btn-privacy {
+  background: #51e5a5;
+  color: #fff;
+  padding: 10px 30px 10px 30px;
+  font-size: 1.8vh;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.btn-privacy:hover {
+  background: #037aad;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.text-bule {
+  color: #6fd5ff;
+}
+
+.form-input {
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #84898f;
+  width: 100%;
+}
+input::placeholder {
+  color: #66c0e6;
+  font-size: 1.6vh;
+}
+input:hover {
+  border-bottom: 1px solid #66c0e6;
+}
+.btn-book {
+  background: #51e5a5;
+  color: #fff;
+  padding: 15px 40px 15px 40px;
+  font-size: 1.9vh;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  float: right;
+}
+.btn-book:hover {
+  background: #037aad;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.term-policy-sec:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.form-to-book:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(27, 4, 235, 0.22) 0px 15px 12px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.testimonial-section .first-child {
+  border-radius: 10px;
+  background: #f3f7ffe8;
+  transition: 1s box-shadow;
+}
+.client-section .row .second-child {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 1s box-shadow;
+}
+.testimonial-section .third-child {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 1s box-shadow;
+}
+.testimonial-section .first-child:hover {
+  /* box-shadow: rgba(4, 27, 228, 0.4) 5px 5px, rgba(49, 51, 177, 0.3) 10px 10px,
+    rgba(29, 14, 238, 0.2) 15px 15px, rgba(13, 9, 243, 0.1) 20px 20px,
+    rgba(47, 6, 233, 0.05) 25px 25px, rgba(4, 27, 228, 0.4) -5px 5px,
+    rgba(49, 51, 177, 0.3) -10px 10px, rgba(29, 14, 238, 0.2) -15px 15px,
+    rgba(13, 9, 243, 0.1) -20px 20px, rgba(47, 6, 233, 0.05) -25px 25px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.testimonial-section .second-child:hover {
+  box-shadow: rgba(18, 3, 228, 0.4) 0px 5px, rgba(8, 4, 248, 0.3) 0px 10px,
+    rgba(2, 6, 241, 0.2) 0px 15px, rgba(5, 9, 235, 0.1) 0px 20px,
+    rgba(39, 5, 233, 0.05) 0px 25px;
+}
+.testimonial-section .third-child:hover {
+  box-shadow: rgba(4, 27, 228, 0.4) 5px 5px, rgba(49, 51, 177, 0.3) 10px 10px,
+    rgba(29, 14, 238, 0.2) 15px 15px, rgba(13, 9, 243, 0.1) 20px 20px,
+    rgba(47, 6, 233, 0.05) 25px 25px;
+}
+.owl-carousel{
+  height: 550px;
+}
+.icon-font div {
+  height: 38px;
+  width: 38px;
+  border-radius: 5px;
+  background: #535ee5;
+  margin-left: 8px;
+}
+.icon-font div:hover {
+  background: #51e5a5;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.section-unlock-bussiness {
+  background-image: linear-gradient(
+      -90deg,
+      rgba(255, 255, 255, 255) 61.95%,
+      transparent 61.95%,
+      transparent 151%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 255) 0%,
+      rgba(238, 239, 252, 255) 0%
+    );
+  padding: 5%;
+}
+.btn-call-request-parent {
+  display: none;
+}
+
+@media screen and (min-width: 230px) and (max-width: 512px) {
+  .btn-call {
+    display: none;
+  }
+  .section-unlock-bussiness {
+    background: #fff;
+  }
+  .btn-call-request-parent {
+    display: block;
+  }
+  .btn-call-request-parent .btn-call-media {
+    background: #535ee5;
+    color: #fff;
+    padding: 12px 80px 12px 80px;
+    font-size: 1.6vh;
+    border: none;
+    border-radius: 50px;
+  }
+}
